@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
+    --main-bg-color: #FCFCFC;
+    --nav-bg-color: #EB1C28;
+    --header-font: font-family: 'Lato', sans-serif;
+    --reading-font: font-family: 'Open Sans', sans-serif;
+    --title-fontsize: 52px;
+    --header-fontsize: 23px;
+    --larger-writtens-fontsize: 21px;
+    --smaller-writtens-fontsize: 18px;
+    --nav-link-fontsize: 20px;
+}
+
+article {
+    margin: 10px;
+    background-color: #241C24;
+    color: #FCFCFC
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: 95px 0.1fr 6fr 95px;
+    grid-template-areas: "navbar""header""mainSection""Footer";
+    background-color: var(--main-bg-color);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "burgerMenu BastardLogo";
+    background-color: var(--nav-bg-color);
+    height: 95px;
+}
+
+.BastardLogo {
+    grid-area: BastardLogo;
+}
+
+.burgerMenu {
+    grid-area: burgerMenu;
+}
+
+.header {
+    top: 0;
+    grid-area: header;
+    background-color: azure;
+}
+
+.mainSection {
+    display: grid;
+    grid-template-columns: 0.2fr 2.6fr 0.2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". mainContent .";
+    grid-area: mainSection;
+}
+
+.mainContent {
+    grid-area: mainContent;
+    height: 100%;
+
+}
+
+template {
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+}
+
+.Footer {
+    display: grid;
+    grid-template-columns: 0.2fr 2.6fr 0.2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". footerContent .";
+    grid-area: Footer;
+    background-color: #94949C;
+}
+
+.footerContent {
+    grid-area: footerContent;
+    position: absolute;
+    bottom: 0;
+}
+/*category nav below*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 12vh;
+    font-family: 'open sans', sans-serif;
+    margin-right: 20px;
+}
+
+/*nav below*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #FBDCEC;
+    overflow-x: hidden;
+    transition: 0.1s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #EB1C28;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}

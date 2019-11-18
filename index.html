@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="navbar">
+            <div class="BastardLogo"></div>
+            <div class="burgerMenu">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                </div>
+                <img src="img/burger-menu.png" alt="" class="burgermenu"style="font-size:30px;cursor:pointer" onclick="openNav()">
+            </div>
+        </div>
+        <div class="header">
+            <nav>
+
+            </nav>
+        </div>
+        <div class="mainSection">
+            <div class="mainContent">
+                <section id="posts">
+                    <template class="eventTemplate">
+                        <article id="article">
+                            <header class="article_header">
+                                <a href="sub.html?id=">
+                                    <h1>TITLE GOES HERE</h1>
+                                </a>
+                                <img src="" alt="" class="cover">
+                                <section class="body_date">DATE</section>
+                                <section class="body_time">TIME</section>
+                            </header>
+                            <section class="body_copy">BODY STUFF HERE</section>
+
+                            <h1 class="body_venue">VENUE</h1>
+                            <a href="">PURCHASE TICKET</a>
+                        </article>
+                    </template>
+                </section>
+            </div>
+        </div>
+        <div class="Footer">
+            <div class="footerContent"></div>
+        </div>
+    </div>
+</body>
+
+</html>
